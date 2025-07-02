@@ -7,3 +7,11 @@ We ran simulations to assess two such fundamental characteristics:
 2. Does Centaur implicitly model human short term memory (which is ~4-7 items)? By implementing a digit-recall task (test_STM.py), we found that no, Centaur does not have human-like memory limits—it can perfectly recall many sequences of over a 100 digits!
 
 These experiments cast doubt over the claim that Centaur is modeling human cognition.
+
+### Requirements (what we ran the code with)
+
+- python=3.11
+- pytorch=2.5.1
+- pytorch-cuda=11.8
+- xformers
+- unsloth
