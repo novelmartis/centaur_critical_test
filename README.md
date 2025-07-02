@@ -15,3 +15,5 @@ These experiments cast doubt over the claim that Centaur is modeling human cogni
 - pytorch-cuda=11.8
 - xformers
 - unsloth
+
+We ran the experiments on 1 H100. The STM script takes ~6 hours to execute, while the RT script finishes in ~30 minutes.
