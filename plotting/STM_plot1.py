@@ -21,7 +21,6 @@ ax = sns.stripplot(
 	marker="."
 	)
 ax.axhline(0.1, ls='--', color='grey')
-ax.axhline(0.9, ls='--', color='red')
 mean_values = df.groupby('Sequence length')['Accuracy'].mean().plot(color='maroon')
 print("means:")
 print(df.groupby('Sequence length')['Accuracy'].mean())
