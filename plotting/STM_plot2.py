@@ -8,9 +8,9 @@ condition = 'normal' # normal or superhuman
 df = pd.read_csv("STM_all_positions_acc_len_64_and_128_perfect_wm.csv" if condition == 'normal' else "STM_sh_all_positions_acc_len_64_and_128_perfect_wm.csv")
 df['n_numbers_in'] = df['n_numbers_in'].astype('category')
 df = df.rename(columns={"n_numbers_in": "Sequence length"})
-#df = df[df["Sequence length"] == 64]
-palette = sns.color_palette('tab10', 8)
+df = df[df["digit_position"] <= 256]
 
+palette = sns.color_palette('tab10', 8)
 ax = sns.relplot(
 	data=df, 
 	x="digit_position", 
