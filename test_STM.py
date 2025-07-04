@@ -147,13 +147,13 @@ data_pos = {
     'digit_accuracy': digit_correct,
         }
 df_pos = pd.DataFrame.from_dict(data_pos)
-df_pos.to_csv(f'STM_all_positions_acc_len_64_and_128_perfect_wm.csv' if condition=='normal' else f'STM_sh_all_positions_acc_len_64_and_128_perfect_wm.csv', index=False)
+df_pos.to_csv(f'data/STM_all_positions_acc_len_64_and_128_perfect_wm.csv' if condition=='normal' else f'data/STM_sh_all_positions_acc_len_64_and_128_perfect_wm.csv', index=False)
 
 data = {'n_numbers_in': n_numbers_in,
         'trial': trial_number,
         'accuracy': overall_accuracies
         }
 df = pd.DataFrame.from_dict(data)
-df.to_csv(f'STM_trials_{TRIALS}_powers_of_2_perfect_wm.csv' if condition=='normal' else f'STM_sh_trials_{TRIALS}_powers_of_2_perfect_wm.csv', index=False)
+df.to_csv(f'data/STM_trials_{TRIALS}_powers_of_2_perfect_wm.csv' if condition=='normal' else f'data/STM_sh_trials_{TRIALS}_powers_of_2_perfect_wm.csv', index=False)
 #endregion
 

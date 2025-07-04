@@ -5,7 +5,7 @@ import seaborn as sns
 
 condition = 'normal' # normal or superhuman
 
-df = pd.read_csv("STM_all_positions_acc_len_64_and_128_perfect_wm.csv" if condition == 'normal' else "STM_sh_all_positions_acc_len_64_and_128_perfect_wm.csv")
+df = pd.read_csv("../data/STM_all_positions_acc_len_64_and_128_perfect_wm.csv" if condition == 'normal' else "../data/STM_sh_all_positions_acc_len_64_and_128_perfect_wm.csv")
 df['n_numbers_in'] = df['n_numbers_in'].astype('category')
 df = df.rename(columns={"n_numbers_in": "Sequence length"})
 df = df[df["digit_position"] <= 256]

@@ -104,7 +104,7 @@ for i in range(runs):
     print('Done with run',i,'ender:',prompt[prompt_len:])
 print('Missed count:',missed_count)
 
-with open('ms1_array.pkl', 'wb') as f:
+with open('data/ms1_array.pkl', 'wb') as f:
     pickle.dump(rt_array, f)
 #endregion
 
@@ -158,6 +158,6 @@ print('Missed count:',missed_count)
 
 # save rt_array as pickle
 
-with open('msfree_array.pkl', 'wb') as f:
+with open('data/msfree_array.pkl', 'wb') as f:
     pickle.dump(rt_array, f)
 #endregion
