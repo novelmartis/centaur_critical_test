@@ -10,6 +10,9 @@ df['n_numbers_in'] = df['n_numbers_in'].astype('category')
 df = df.rename(columns={"n_numbers_in": "Sequence length", "trial": "Trial", "accuracy": "Accuracy"})
 print(df)
 
+print(sum(df[df['Sequence length']==256]['Accuracy']==1))
+print(sum(df[df['Sequence length']==256]['Accuracy']>0.99))
+
 fig, ax = plt.subplots(figsize=(8, 4), dpi=300)
 ax = sns.stripplot(
 	data=df, 
